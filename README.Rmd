@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# pieR
+
+A utility package for creating c3 pie charts based on the rstudio js tutorials.
+
+## Installation
+
+You can install pieR from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("theoroe3/pieR")
+```
+
+## Example
+
+This is a basic example:
+
+```{r example}
+pie(c(1,2,3,4))
+
+pie(c(5,5,5))
+```
