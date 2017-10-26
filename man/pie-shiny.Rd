@@ -28,3 +28,34 @@ is useful if you want to save an expression in a variable.}
 Output and render functions for using pie within Shiny
 applications and interactive Rmd documents.
 }
+\examples{
+## only run this in interactive R sessions
+if(interactive()){
+  ui <- fluidPage(
+     titlePanel("Pie Example!"),
+      sidebarLayout(
+        sidebarPanel(
+         sliderInput("obs",
+                     "Generate n random Numbers",
+                     min = 2,
+                     max = 10,
+                     value = 5),
+                   ),
+         mainPanel(
+           pieOutput("piePlot"),
+           textOutput("randNo")
+    )
+  )
+)
+server <- function(input, output) {
+       numbers = reactive(round(runif(input$obs,1,10),0))
+       output$piePlot <- renderPie({
+                    pie(numbers())
+                 })
+       output$randNo <- renderText({
+       numbers()
+          })
+    }
+  shinyApp(ui = ui, server = server)
+}
+}
