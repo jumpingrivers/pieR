@@ -1,49 +1,43 @@
----
-output:
-  md_document:
-    variant: markdown_github
-editor_options: 
-  chunk_output_type: console
----
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
-
 [![Build Status](https://travis-ci.org/jumpingrivers/pieR.svg?branch=master)](https://travis-ci.org/jumpingrivers/pieR)
 
-# pieR
+pieR
+====
 
 A utility package for creating c3 pie charts based on the rstudio js tutorials.
 
-## Installation
+Installation
+------------
 
 You can install pieR from github with:
 
-```{r gh-installation, eval = FALSE}
+``` r
 # install.packages("devtools")
 devtools::install_github("jumpingrivers/pieR")
 ```
 
-## Example
+Example
+-------
 
 A couple of basic examples of the `pie()` function:
 
-```{r example}
+``` r
 pie(c(1,2,3,4))
+```
+
+![](README-example-1.png)
+
+``` r
 
 pie(c(5,5,5))
 ```
 
-#' A basic shiny example 
+![](README-example-2.png)
 
-```{r, eval = TRUE}
+' A basic shiny example
+=======================
+
+``` r
 ## Only run this in interactive R sessions
 if(interactive()){
 ui <- fluidPage(
