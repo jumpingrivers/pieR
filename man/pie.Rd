@@ -8,7 +8,7 @@ pie(values, legendPosition = "bottom", width = NULL, height = NULL,
   elementId = NULL)
 }
 \arguments{
-\item{values}{A list of values with each it's own section of the pie chart.}
+\item{values}{A list of values, each with its own section of the pie chart.}
 
 \item{legendPosition}{The position of the legend, default = "bottom".}
 
