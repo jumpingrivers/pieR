@@ -1,0 +1,15 @@
+language: r
+
+cache: packages
+
+r:
+  - oldrel
+  - release
+  - devel
+
+Imports: htmlwidgets
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

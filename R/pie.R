@@ -3,7 +3,7 @@
 #' @description An easy way to create c3 pie charts based on the rstudio js tutorials.
 #'
 #' @import htmlwidgets
-#' @param values A list of values with each it's own section of the pie chart.
+#' @param values A list of values, each with its own section of the pie chart.
 #' @param legendPosition The position of the legend, default = "bottom".
 #' @param width The width of the html widget.
 #' @param height The width of the html widget.
