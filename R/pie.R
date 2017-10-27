@@ -57,7 +57,7 @@ pie <- function(values, legendPosition = "bottom", width = NULL, height = NULL, 
 #'                      "Generate n random Numbers",
 #'                      min = 2,
 #'                      max = 10,
-#'                      value = 5),
+#'                      value = 5)
 #'                    ),
 #'          mainPanel(
 #'            pieOutput("piePlot"),
