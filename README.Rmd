@@ -6,6 +6,10 @@ editor_options:
   chunk_output_type: console
 ---
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/jumpingrivers/pieR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jumpingrivers/pieR/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
@@ -17,8 +21,6 @@ knitr::opts_chunk$set(
 ```
 
 # pieR
-
-[![Build Status](https://travis-ci.org/jumpingrivers/pieR.svg?branch=master)](https://travis-ci.org/jumpingrivers/pieR)
 
 A utility package for creating d3 pie charts based on the RStudio js tutorials.
 

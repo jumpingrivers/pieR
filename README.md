@@ -1,13 +1,16 @@
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/jumpingrivers/pieR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jumpingrivers/pieR/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-pieR
-====
 
-[![Build Status](https://travis-ci.org/jumpingrivers/pieR.svg?branch=master)](https://travis-ci.org/jumpingrivers/pieR)
+# pieR
 
-A utility package for creating d3 pie charts based on the RStudio js tutorials.
+A utility package for creating d3 pie charts based on the RStudio js
+tutorials.
 
-Installation
-------------
+## Installation
 
 You can install **pieR** from GitHub with:
 
@@ -16,8 +19,7 @@ You can install **pieR** from GitHub with:
 devtools::install_github("jumpingrivers/pieR")
 ```
 
-Example
--------
+## Example
 
 A couple of basic examples of the `pie()` function:
 
@@ -27,8 +29,7 @@ pie(1:5)
 pie(c(5, 5, 5))
 ```
 
-A basic Shiny example
-=====================
+# A basic Shiny example
 
 ``` r
 ## Only run this in interactive R sessions
